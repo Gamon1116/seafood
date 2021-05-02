@@ -66,7 +66,10 @@
                 </a>
               </li> -->
 
-              <router-link to="/product">Product</router-link>
+              <!-- <h3>
+                <Product />
+              </h3> -->
+              <!-- <router-link to="/product">Product</router-link> -->
               <!-- <md-list-item
                  href="https://demos.creative-tim.com/vue-material-kit/documentation/" 
                 target="_blank"
@@ -75,16 +78,16 @@
                <h3>그냥메세지</h3>
               </md-list-item> -->
 
-              <md-list-item
+              <!-- <md-list-item
                 href="javascript:void(0)"
                 @click="scrollToElement()"
                 v-if="showDownload"
               >
                 <i class="material-icons">cloud_download</i>
                 <p>Download</p>
-              </md-list-item>
+              </md-list-item> -->
 
-              <li class="md-list-item" v-else>
+              <li class="md-list-item" >
                 <a
                   href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -175,11 +178,12 @@ function resizeThrottler(actualResizeHandler) {
     }, 66);
   }
 }
-
+// import Product from "../views/Product"
 import MobileMenu from "@/layout/MobileMenu";
 export default {
   components: {
     MobileMenu,
+    // Product
   },
   props: {
     type: {

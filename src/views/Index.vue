@@ -9,7 +9,7 @@
             <img :src="leaf2" alt="leaf2" class="leaf2" v-show="leafShow" />
             <img :src="leaf1" alt="leaf1" class="leaf1" v-show="leafShow" /> -->
             <div class="brand">
-              <h1>명진 수산</h1>
+              <h1>사진 명진 수산</h1>
             </div>
           </div>
         </div>
@@ -17,18 +17,10 @@
     </parallax>
     <div class="main main-raised">
       <div>
-        <h2>여기에담자</h2>
         <div id="">
-          <!-- <router-link to="/product">1차</router-link>
-          <router-link to="/product">2차</router-link> -->
-          <div class="section section-basic">
-            <div class="container">
-              <div class="title">
-                <h2>맑고 푸른 바다에서 갓 잡아올린 수산물만을 엄선합니다!</h2>
-              </div>
-              <basic-elements></basic-elements>
-            </div>
-          </div>
+          <Product />
+          <Change />
+          <Carouesl />
         </div>
       </div>
       <!-- <div class="section section-navbars">
@@ -273,7 +265,7 @@
 </template>
 
 <script>
-import BasicElements from "./components/BasicElementsSection";
+// import BasicElements from "./components/BasicElementsSection";
 // import Navigation from "./components/NavigationSection";
 // import SmallNavigation from "./components/SmallNavigationSection";
 // import Tabs from "./components/TabsSection";
@@ -282,10 +274,16 @@ import BasicElements from "./components/BasicElementsSection";
 // import TypographyImages from "./components/TypographyImagesSection";
 // import JavascriptComponents from "./components/JavascriptComponentsSection";
 // import { LoginCard } from "@/components";
+import Product from "../views/Product";
+import Carouesl from "../views/Carouesl";
+import Change from "../views/Change";
 
 export default {
   components: {
-    BasicElements,
+    Product,
+    Carouesl,
+    Change
+    
     // Navigation,
     // SmallNavigation,
     // Tabs,
@@ -302,6 +300,7 @@ export default {
       type: String,
       default: require("@/assets/img/seafood.jpg")
     },
+    
     // leaf4: {
     //   type: String,
     //   default: require("@/assets/img/leaf4.png")
