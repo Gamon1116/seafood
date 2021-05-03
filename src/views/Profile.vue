@@ -49,7 +49,7 @@
           </div>
           <div class="profile-tabs">
             <tabs
-              :tab-name="['Studio', 'Work', 'Favorite']"
+              :tab-name="['1111', 'Work', 'Favorite']"
               :tab-icon="['camera', 'palette', 'favorite']"
               plain
               nav-pills-icons

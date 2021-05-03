@@ -1,12 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Index from "./views/Index.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
-import Product from "./views/Product.vue";
+import Home from "./views/Home.vue";
+import Index from "./views/Index.vue";
 
 Vue.use(Router);
 
@@ -14,8 +14,8 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "index",
-      components: { default: Index, header: MainNavbar, footer: MainFooter },
+      name: "home",
+      components: { default: Home, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
@@ -48,14 +48,23 @@ export default new Router({
       }
     },
     {
-      path: "/product",
-      name: "Product",
-      components: { default: Product, header: MainNavbar, footer: MainFooter },
+      path: "/index",
+      name: "Index",
+      components: { default: Index, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
       }
     },
+    // {
+    //   path: "/change",
+    //   name: "change",
+    //   components: { default: Change, header: MainNavbar, footer: MainFooter },
+    //   props: {
+    //     header: { colorOnScroll: 400 },
+    //     footer: { backgroundColor: "black" }
+    //   }
+    // },
   ],
   scrollBehavior: to => {
     if (to.hash) {

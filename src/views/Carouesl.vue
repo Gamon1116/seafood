@@ -25,72 +25,22 @@
                 <img :src="carousel1" alt="carousel1" />
               </slide>
               <slide>
-                <!-- 이미지내 text
-                <div class="carousel-caption">
-                  <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
-                  </h4>
-                </div> -->
                 <img :src="carousel2" alt="carousel2" />
               </slide>
               <slide>
-                <!-- 이미지내 text
-                <div class="carousel-caption">
-                  <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
-                  </h4>
-                </div> -->
                 <img :src="carousel3" alt="carousel3" />
               </slide>
             </carousel>
           </md-card>
         </div>
       </div>
-  
-
-    
-
   </div>
 </template>
 
 <script>
-// import { Pagination } from "@/components";
-// import { Slider } from "@/components";
-// import { Badge } from "@/components";
-
 export default {
-  // components: {
-  //   Pagination,
-  //   Slider,
-  //   Badge
-  // },
   data() {
     return {
-      defaultPagination: 3,
-      infoPagination: 3,
-      initial: null,
-      floatingLabel: null,
-      success: null,
-      error: null,
-      withMIcon: null,
-      withFaIcon: null,
-      checkbox1: true,
-      checkbox2: null,
-      checkbox3: true,
-      checkbox4: null,
-      radio1: true,
-      radio2: false,
-      switch1: true,
-      switch2: null,
-      amount: 30,
-      amount2: 60,
-      buffer: 40,
-      sliders: {
-        simple: 40,
-        rangeSlider: [20, 60]
-      },
       carousel1: require("@/assets/img/octopus.jpg"),
       carousel2: require("@/assets/img/fish.jpg"),
       carousel3: require("@/assets/img/mix.jpg")
